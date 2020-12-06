@@ -78,7 +78,7 @@ RCT_EXPORT_METHOD(requestAd:
         request.testDevices = _testDevices;
 
         GADMAdapterNendExtras *extras = [[GADMAdapterNendExtras alloc] init];
-        extras.interstitialType = GADMNendInterstitialTypeVideo;
+        extras.interstitialType = GADMAdapterNendInterstitialTypeVideo;
         extras.userId = userId;
         [request registerAdNetworkExtras:extras];
 

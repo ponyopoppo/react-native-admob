@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   # Google-Mobile-Ads-SDK as a direct dependency.
   s.weak_frameworks        = 'GoogleMobileAds', 'NendAdapter'
   s.pod_target_xcconfig    = {
-    'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/**"',
+    'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/**" "${PODS_ROOT}/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/**"',
   }
 
   s.dependency 'React'
